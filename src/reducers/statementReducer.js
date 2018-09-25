@@ -1,6 +1,7 @@
 const statementsReducer = (
   state = {
     currentStatement: null,
+    statementArray: [],
     availableStatements: [],
     statementLoadingStatus: false
   },
@@ -17,6 +18,11 @@ const statementsReducer = (
         ...state,
         currentStatement: action.statement,
         statementLoadingStatus: false
+      };
+    case "SET_STATEMENT_ARRAY":
+      return {
+        ...state,
+        statementArray: action.statementArray
       };
     default:
       return state;

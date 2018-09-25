@@ -10,3 +10,8 @@ export const setCurrentStatement = statementId => {
       });
   };
 };
+
+export const setStatementArray = statementArray => ({
+  type: "SET_STATEMENT_ARRAY",
+  statementArray
+});

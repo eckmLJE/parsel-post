@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import "../css/StatementContainer.css";
 
 import { setCurrentStatement } from "../actions/statements";
-
-import StatementContent from "./StatementContent";
+import StatementProcessor from "./StatementProcessor"
 
 class StatementContainer extends Component {
   componentDidMount = () => {
@@ -13,7 +13,7 @@ class StatementContainer extends Component {
   render() {
     return (
       <div className="statement-container">
-        <StatementContent />
+        {this.props.currentStatement && <StatementProcessor />}
       </div>
     );
   }

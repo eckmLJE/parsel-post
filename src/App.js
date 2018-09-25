@@ -3,7 +3,7 @@ import "./App.css";
 
 import Header from "./components/Header";
 import StatementContainer from "./components/StatementContainer";
-import AnnotationsContainer from "./components/AnnotationsContainer";
+// import AnnotationsContainer from "./components/AnnotationsContainer";
 
 class App extends Component {
   render() {
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <StatementContainer />
-        <AnnotationsContainer />
+        {/* <AnnotationsContainer /> */}
       </div>
     );
   }
