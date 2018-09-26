@@ -1,10 +1,17 @@
 .statement-container {
-    width: 100%;
-    border: solid 2px black;
+  width: 100%;
+  border: solid 2px black;
 }
 
 .statement-content {
-    padding: 20px;
-    font-size: 1.1em;
-    line-height: 1.2em;
+  padding: 20px;
+  font-size: 1.1em;
+  line-height: 1.2em;
+}
+
+.statement-span {
+}
+
+.statement-highlight {
+  border-bottom: solid 1px red;
 }

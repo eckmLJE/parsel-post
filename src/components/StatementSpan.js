@@ -1,7 +1,7 @@
 import React from "react";
 
 const StatementSpan = props => {
-  return <div>{props.content}</div>;
+  return <div className="statement-span">{props.content}</div>;
 };
 
 export default StatementSpan;

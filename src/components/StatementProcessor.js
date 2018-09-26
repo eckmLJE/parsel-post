@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 import StatementContent from "./StatementContent";
 import StatementSpan from "./StatementSpan";
+// import StatementHighlight from "./StatementHighlight";
 
 import { setStatementArray } from "../actions/statements";
 
@@ -13,6 +14,8 @@ class StatementProcessor extends Component {
   };
 
   processStatement = () => {
+    const annotations = this.props.currentStatement.annotations;
+    annotations.sort((a, b) => a.start > b.start);
     const statementArray = [];
     const testStatement = this.props.currentStatement;
     statementArray.push(
